@@ -1,0 +1,22 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="GWStaging"
+  DTS:DTSID="{EA62C0E7-CF0B-42BD-8840-CCEC8B17E6B2}"
+  DTS:CreationName="OLEDB">
+  <DTS:PropertyExpression
+    DTS:Name="InitialCatalog">@[$Project::GWStagingDatabase]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="Password">@[$Project::Pwd]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="ServerName">@[$Project::SourceServer]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="UserName">@[$Project::UserId]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=VA1-TGMRSQL130;User ID=bcUser;Initial Catalog=BC_RPT;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAGp/gCEq6t0e9aokiIM0EqgAAAAACAAAAAAADZgAAwAAAABAAAABXXEswnAzyL73iZNRIPPU/AAAAAASAAACgAAAAEAAAABQoScWx865tFBKjF8DE6Vl4AAAAZrHZpcd+IH3zaiL23A/acPc+aaxcuCf/4qMjSNELdzE7ESfhxYQJtw2obeeKiabkLyONIqSTUcq3c5ShvIcVfxzDmpsepHYqtDgQGaBB0ccA4gRbH048RjCTE64Dct12aNGePFJQyFuns9QpEHxRkVCOrdj5LCdKFAAAADvAl9YZMkLA17HOBbFg1P90oBiC</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
